@@ -1,0 +1,21 @@
+page {
+    includeCSS {
+        theme = EXT:cat_cafe/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        cat_cafe_scripts = EXT:cat_cafe/Resources/Public/JavaScript/main.js
+    }
+}

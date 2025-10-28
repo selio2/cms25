@@ -1,0 +1,4 @@
+name: fhooe/cat-cafe
+label: 'Cat Cafe'
+dependencies:
+  - bootstrap-package/full

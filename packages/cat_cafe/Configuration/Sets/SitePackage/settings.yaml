@@ -1,0 +1,28 @@
+plugin:
+  bootstrap_package:
+    settings:
+      scss:
+        primary: '#eb3e4a'
+        secondary: '#013859'
+    view:
+      layoutRootPath: 'EXT:cat_cafe/Resources/Private/Layouts/'
+      partialRootPath: 'EXT:cat_cafe/Resources/Private/Partials/'
+      templateRootPath: 'EXT:cat_cafe/Resources/Private/Templates/'
+  bootstrap_package_contentelements:
+    view:
+      layoutRootPath: 'EXT:cat_cafe/Resources/Private/Layouts/ContentElements/'
+      partialRootPath: 'EXT:cat_cafe/Resources/Private/Partials/ContentElements/'
+      templateRootPath: 'EXT:cat_cafe/Resources/Private/Templates/ContentElements/'
+page:
+  logo:
+    file: 'EXT:cat_cafe/Resources/Public/Images/logo.svg'
+    fileInverted: 'EXT:cat_cafe/Resources/Public/Images/logo-inverted.svg'
+    width: 192
+    alt: 'My Site Package'
+    linktitle: 'My Site Package'
+  favicon:
+    file: 'EXT:cat_cafe/Resources/Public/Icons/favicon.ico'
+  fluidtemplate:
+    layoutRootPath: 'EXT:cat_cafe/Resources/Private/Layouts/Page/'
+    partialRootPath: 'EXT:cat_cafe/Resources/Private/Partials/Page/'
+    templateRootPath: 'EXT:cat_cafe/Resources/Private/Templates/Page/'
