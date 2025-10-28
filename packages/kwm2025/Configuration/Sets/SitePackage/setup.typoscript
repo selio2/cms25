@@ -2,6 +2,12 @@
 page {
     includeCSS {
         theme = EXT:kwm2025/Resources/Public/Scss/Theme/theme.scss
+        css = https://use.fontawesome.com/releases/v6.4.2/css/all.css
+        css {
+            external = 1
+            media = all
+            excludeFromConcatenation = 1
+        }
     }
 
     includeJSLibs {
