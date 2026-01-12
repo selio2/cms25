@@ -1,0 +1,33 @@
+<div class="menu-card-container">
+    <f:if condition="{data.tx_mask_title}">
+    <h2 class="menu-title">
+        {data.tx_mask_title}
+    </h2>
+</f:if>
+
+<f:if condition="{data.tx_mask_items}">
+    <div class="menu-items">
+        <f:for each="{data.tx_mask_items}" as="item">
+            <div class="menu-item">
+
+                <div class="menu-item-top">
+                    <span class="menu-name">
+                        {item.tx_mask_name}
+                    </span>
+
+                    <span class="menu-price">
+                        {item.tx_mask_price}
+                    </span>
+                </div>
+
+                <f:if condition="{item.tx_mask_description}">
+                    <div class="menu-description">
+                        {item.tx_mask_description}
+                    </div>
+                </f:if>
+
+            </div>
+        </f:for>
+    </div>
+</f:if>
+</div>

@@ -1,0 +1,20 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          120: EXT:cat_cafe/Resources/Private/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateVariant: version2
+                templateRootPaths:
+                  30: 'EXT:cat_cafe/Resources/Private/Templates/Form/'
+                translation:
+                  translationFiles:
+                    120: 'EXT:cat_cafe/Resources/Private/Language/locallang.en.xlf'
+

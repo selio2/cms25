@@ -1,0 +1,44 @@
+<div class="voucher-card" data-voucher-id="{data.uid}">
+
+    <div class="voucher-image-wrapper">
+        <f:for each="{data.tx_mask_bild}" as="file">
+            <f:media file="{file}" class="voucher-image" alt="{file.description}" />
+        </f:for>
+    </div>
+
+    <div class="voucher-content">
+        <f:if condition="{data.tx_mask_badge}">
+            <div class="voucher-badge">
+                {data.tx_mask_badge}
+            </div>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_title}">
+            <div class="voucher-title">
+                {data.tx_mask_title}
+            </div>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_valid_until}">
+            <div class="voucher-validity">
+                <f:translate
+                    key="voucher.validUntil"
+                    extensionName="cat_cafe"
+                />
+                {data.tx_mask_valid_until -> f:format.date(format: 'd.m.Y')}
+            </div>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_button}">
+            <f:link.typolink parameter="{data.tx_mask_button}" class="voucher-btn">
+        <span>
+          <f:translate
+              key="voucher.redeem"
+              extensionName="cat_cafe"
+          />
+        </span>
+            </f:link.typolink>
+        </f:if>
+    </div>
+
+</div>

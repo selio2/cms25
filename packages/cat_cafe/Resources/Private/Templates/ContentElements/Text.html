@@ -1,0 +1,16 @@
+<f:switch expression="{data.layout}">
+
+    <f:case value="20">
+        <div class="voucher-info">
+            <div class="voucher-info__content">
+                <h2 class="voucher-title">{data.header}</h2>
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+        </div>
+    </f:case>
+
+    <f:defaultCase>
+        <f:format.html>{data.bodytext}</f:format.html>
+    </f:defaultCase>
+
+</f:switch>

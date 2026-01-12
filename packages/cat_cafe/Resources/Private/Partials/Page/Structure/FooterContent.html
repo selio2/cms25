@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<!-- Footer Wrapper -->
+<footer class="section footer-section footer-section-content">
+    <div class="container">
+
+        <!-- Drei-Spalten-Layout -->
+        <div class="section-row footer-row">
+
+            <!-- LINKS: Logo / Name -->
+            <div class="section-column footer-column footer-left">
+                <!-- Inhalt aus Spalte 10 (z. B. Logo-CE) -->
+                <f:cObject
+                    typoscriptObjectPath="lib.dynamicContent"
+                    data="{pageUid: '{data.uid}', colPos: '10', slide: '-1'}" />
+            </div>
+
+            <!-- MITTE: Impressum -->
+            <div class="section-column footer-column footer-center">
+                <!-- Inhalt aus Spalte 11 (Impressum-Link) -->
+                <f:cObject
+                    typoscriptObjectPath="lib.dynamicContent"
+                    data="{pageUid: '{data.uid}', colPos: '11', slide: '-1'}" />
+            </div>
+
+            <!-- RECHTS: Social Icons -->
+            <div class="section-column footer-column footer-right">
+                <!-- Inhalt aus Spalte 12 (Social Links) -->
+                <f:cObject
+                    typoscriptObjectPath="lib.dynamicContent"
+                    data="{pageUid: '{data.uid}', colPos: '12', slide: '-1'}" />
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,266 @@
+
+renderingOptions:
+  submitButtonLabel: Abschicken
+type: Form
+identifier: kontaktformular
+label: Kontaktformular
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Danke für Ihre Nachricht'
+      recipients:
+        '{email-1}': '{text-1}'
+      senderAddress: s2410456019@students.fh-hagenberg.at
+      senderName: KWM
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+      translation:
+        language: default
+    identifier: EmailToSender
+    defaultValue: ''
+  -
+    options:
+      subject: 'KWM - Neue Anfrage'
+      recipients:
+        s2410456019@fhooe.at: 'Selin Narli'
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: default
+      title: '{singleselect-1}'
+    identifier: EmailToReceiver
+    defaultValue: ''
+  -
+    options:
+      pageUid: '24'
+      additionalParameters: ''
+      fragment: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: ''
+      nextButtonLabel: Weiter
+    type: Page
+    identifier: page-1
+    label: Kontaktformular
+    renderables:
+      -
+        properties:
+          options:
+            Tischreservierung: Tischreservierung
+            Fragen: Fragen
+            Feedback: Feedback
+            Sonstiges: Sonstiges
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1221560718
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1347992400
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1347992453
+              message: 'Dies ist ein Pflichtfeld.'
+        type: SingleSelect
+        identifier: singleselect-1
+        label: 'Worum geht es bei deiner Anfrage?'
+        defaultValue: ''
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          options:
+            Ja: Ja
+            Nein: Nein
+          elementDescription: 'Hättest du Interesse an einem Newsletter?'
+        type: RadioButton
+        identifier: radiobutton-1
+        label: 'Hättest du Interesse an einem Newsletter?'
+        defaultValue: ''
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Deine Nachricht'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Beschreibe deine Frage oder dein Anliegen'
+            required: required
+            minlength: '5'
+            maxlength: '2000'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1221560718
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1347992400
+              message: 'Dies ist ein Pflichtfeld.'
+            -
+              code: 1347992453
+              message: 'Dies ist ein Pflichtfeld.'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            options:
+              minimum: '5'
+              maximum: '2000'
+            identifier: StringLength
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: Weiter
+    type: Page
+    identifier: page-2
+    label: 'Persönliche Daten'
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Vorname
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: Jane
+                required: required
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1221560718
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992400
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992453
+                  message: 'Dies ist ein Pflichtfeld.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Nachname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Smitherton
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1221560718
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992400
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992453
+                  message: 'Dies ist ein Pflichtfeld.'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Email
+            identifier: email-1
+            label: Email
+            properties:
+              elementDescription: ''
+              fluidAdditionalAttributes:
+                placeholder: email@fakedomain.net
+                required: required
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1221560718
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992400
+                  message: 'Dies ist ein Pflichtfeld.'
+                -
+                  code: 1347992453
+                  message: 'Dies ist ein Pflichtfeld.'
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Telephone
+            identifier: telephone-1
+            label: Telefonnummer
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: '+43 660 39 20 401'
+                autocomplete: tel
+      -
+        type: GridRow
+        identifier: gridrow-3
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Straße
+            properties:
+              fluidAdditionalAttributes:
+                autocomplete: address-line1
+                placeholder: 'Fakestreet 102'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-4
+            label: PLZ
+            properties:
+              fluidAdditionalAttributes:
+                autocomplete: postal-code
+                placeholder: '3010'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-5
+            label: Ort
+            properties:
+              fluidAdditionalAttributes:
+                autocomplete: address-level2
+                placeholder: Fakecity
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: ''
+    type: SummaryPage
+    identifier: summarypage-1
+    label: 'Bitte überprüfe deine Angaben, bevor du die Anfrage absendest.'
