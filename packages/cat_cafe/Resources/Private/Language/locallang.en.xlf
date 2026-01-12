@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file source-language="de" target-language="en" datatype="plaintext">
+    <body>
+
+     <!-- Gutscheinseite: geht leider nicht-->
+     <trans-unit id="voucher.validUntil">
+       <source>bis</source>
+       <target>Valid until</target>
+     </trans-unit>
+
+     <trans-unit id="voucher.redeem">
+       <source>Einlösen</source>
+       <target>Redeem</target>
+     </trans-unit>
+
+
+
+      <!-- Formular -->
+      <trans-unit id="kontaktformular.properties.label">
+        <source>Kontaktformular</source>
+        <target>Contact form</target>
+      </trans-unit>
+
+      <!-- Page 1 -->
+      <trans-unit id="kontaktformular.element.page-1.properties.label">
+        <source>Kontaktformular</source>
+        <target>Contact form</target>
+      </trans-unit>
+
+      <!-- Anfrage -->
+      <trans-unit id="kontaktformular.element.singleselect-1.properties.label">
+        <source>Worum geht es bei deiner Anfrage?</source>
+        <target>What is your inquiry about?</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.singleselect-1.properties.options.Tischreservierung">
+        <source>Tischreservierung</source>
+        <target>Table reservation</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.singleselect-1.properties.options.Fragen">
+        <source>Fragen</source>
+        <target>Questions</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.singleselect-1.properties.options.Feedback">
+        <source>Feedback</source>
+        <target>Feedback</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.singleselect-1.properties.options.Sonstiges">
+        <source>Sonstiges</source>
+        <target>Other</target>
+      </trans-unit>
+
+      <!-- Radio -->
+      <trans-unit id="kontaktformular.element.radiobutton-1.properties.label">
+        <source>Hättest du Interesse an einem Newsletter?</source>
+        <target>Would you be interested in a newsletter?</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.radiobutton-1.properties.options.Ja">
+        <source>Ja</source>
+        <target>Yes</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.radiobutton-1.properties.options.Nein">
+        <source>Nein</source>
+        <target>No</target>
+      </trans-unit>
+
+      <!-- Nachricht -->
+      <trans-unit id="kontaktformular.element.textarea-1.properties.label">
+        <source>Deine Nachricht</source>
+        <target>Your message</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.textarea-1.properties.placeholder">
+        <source>Beschreibe deine Frage oder dein Anliegen</source>
+        <target>Describe your question or request</target>
+      </trans-unit>
+
+      <!-- Page 2 -->
+      <trans-unit id="kontaktformular.element.page-2.properties.label">
+        <source>Persönliche Daten</source>
+        <target>Personal details</target>
+      </trans-unit>
+
+      <!-- Felder -->
+      <trans-unit id="kontaktformular.element.text-1.properties.label">
+        <source>Vorname</source>
+        <target>First name</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.text-2.properties.label">
+        <source>Nachname</source>
+        <target>Last name</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.email-1.properties.label">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.telephone-1.properties.label">
+        <source>Telefonnummer</source>
+        <target>Phone number</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.text-3.properties.label">
+        <source>Straße</source>
+        <target>Street</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.text-4.properties.label">
+        <source>PLZ</source>
+        <target>Postal code</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.element.text-5.properties.label">
+        <source>Ort</source>
+        <target>City</target>
+      </trans-unit>
+
+      <!-- Summary -->
+      <trans-unit id="kontaktformular.element.summarypage-1.properties.label">
+        <source>Bitte überprüfe deine Angaben, bevor du die Anfrage absendest.</source>
+        <target>Please review your details before submitting the request.</target>
+      </trans-unit>
+
+      <!-- Buttons -->
+      <trans-unit id="kontaktformular.properties.renderingOptions.submitButtonLabel">
+        <source>Abschicken</source>
+        <target>Submit</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.properties.renderingOptions.nextButtonLabel">
+        <source>Weiter</source>
+        <target>Next</target>
+      </trans-unit>
+
+      <trans-unit id="kontaktformular.properties.renderingOptions.previousButtonLabel">
+        <source>Zurück</source>
+        <target>Back</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

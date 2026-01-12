@@ -1,0 +1,5 @@
+plugin.tx_news.view.twb5.templateRootPath = EXT:cat_cafe/Resources/Private/Templates/ExtNews/
+plugin.tx_news.view.twb5.partialRootPath = EXT:cat_cafe/Resources/Private/Partials/ExtNews/
+plugin.tx_news.view.twb5.layoutRootPath = EXT:cat_cafe/Resources/Private/Layouts/ExtNews/
+
+plugin.tx_felogin_login.view.templateRootPath =EXT:cat_cafe/Resources/Private/Templates/ContentElements/

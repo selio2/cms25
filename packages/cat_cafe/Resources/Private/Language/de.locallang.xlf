@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages">
+    <body>
+
+      <trans-unit id="voucher.redeem">
+        <source>Redeem</source>
+        <target>Einlösen</target>
+      </trans-unit>
+
+      <trans-unit id="voucher.validUntil">
+        <source>Valid until</source>
+        <target>bis</target>
+      </trans-unit>
+
+      <trans-unit id="voucher.redeemed"> <!-- hat nicht funktioniert -->
+        <source>Redeemed</source>
+        <target>Eingelöst</target>
+      </trans-unit>
+
+
+
+    </body>
+  </file>
+</xliff>

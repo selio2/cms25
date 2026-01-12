@@ -1,3 +1,12 @@
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
+@import 'EXT:sf_register/Configuration/TypoScript/maximal/setup.typoscript'
+@import 'EXT:sf_register/Configuration/TypoScript/maximal/constants.typoscript'
+
+
+
+
 page {
     includeCSS {
         theme = EXT:cat_cafe/Resources/Public/Scss/Theme/theme.scss
@@ -17,5 +26,52 @@ page {
 
     includeJSFooter {
         cat_cafe_scripts = EXT:cat_cafe/Resources/Public/JavaScript/main.js
+    }
+}
+
+page.config.contentObjectExceptionHandler = 0
+
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:cat_cafe/Configuration/Form/Setup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:cat_cafe/Configuration/Form/Setup.yaml
+
+
+plugin.tx_news {
+    settings {
+        #displayDummyIfNoMedia = 1
+        cropMaxCharacters = 200
+        list {
+            paginate {
+                itemsPerPage = 3
+                insertAbove = false
+                insertBelow = true
+            }
+            media {
+                image {
+                    maxWidth = 249
+                    maxHeight = 191
+                }
+            }
+        }
+    }
+    _LOCAL_LANG {
+        de {
+            more-link = Weiterlesen
+            back-link = Zurück
+            dateFormat = %d.%m.%Y
+        }
+    }
+}
+
+plugin.tx_sfregister.view {
+    templateRootPaths {
+        10 = EXT:cat_cafe/Resources/Private/SfRegister/Templates/
+    }
+
+    partialRootPaths {
+        10 = EXT:cat_cafe/Resources/Private/SfRegister/Partials/
+    }
+
+    layoutRootPaths {
+        10 = EXT:cat_cafe/Resources/Private/SfRegister/Layouts/
     }
 }

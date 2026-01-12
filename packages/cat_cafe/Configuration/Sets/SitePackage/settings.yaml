@@ -15,11 +15,11 @@ plugin:
       templateRootPath: 'EXT:cat_cafe/Resources/Private/Templates/ContentElements/'
 page:
   logo:
-    file: 'EXT:cat_cafe/Resources/Public/Images/logo.svg'
-    fileInverted: 'EXT:cat_cafe/Resources/Public/Images/logo-inverted.svg'
+    file: 'EXT:cat_cafe/Resources/Public/Images/Logo.png'
+    fileInverted: 'EXT:cat_cafe/Resources/Public/Images/Logo.png'
     width: 192
-    alt: 'My Site Package'
-    linktitle: 'My Site Package'
+    alt: 'Cat Cafe Velvet Paws'
+    linktitle: 'Cat Cafe Velvet Paws'
   favicon:
     file: 'EXT:cat_cafe/Resources/Public/Icons/favicon.ico'
   fluidtemplate:
